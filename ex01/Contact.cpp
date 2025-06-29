@@ -6,7 +6,7 @@
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 11:26:20 by bschmid           #+#    #+#             */
-/*   Updated: 2025/06/26 11:48:40 by bschmid          ###   ########.fr       */
+/*   Updated: 2025/06/29 18:26:17 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,25 @@ Contact::~Contact() {
 	// No manual cleanup needed
 }
 
+bool Contact::isEmpty() const {
+	return FirstName.empty();
+}
+
+void Contact::display() const {
+    std::cout << "First Name: " << FirstName << std::endl;
+    std::cout << "Last Name: " << LastName << std::endl;
+    std::cout << "Nickname: " << NickName << std::endl;
+    std::cout << "Phone Number: " << PhoneNumber << std::endl;
+    std::cout << "Darkest Secret: " << DarkestSecret << std::endl;
+}
+
+// Format string for display in table (truncate if too long)
+std::string Contact::formatForDisplay(const std::string& str) {
+    if (str.length() > 10)
+        return str.substr(0, 9) + ".";
+    return str;
+}
+
 // Setter Methods
 // they provide controlled access to modify private attributes
 // usind setters allows for validation before updating values
@@ -39,18 +58,18 @@ void Contact::setFirstName(const std::string& firstName){
 }
 
 void Contact::setLastName(const std::string& lastName){
-	LastName = LastName;
+	LastName = lastName;
 }
 
 void Contact::setNickName(const std::string& nickName){
 	NickName = nickName;
 }
 
-void Contact::setDarkestSecret(const std::string& phoneNumber){
+void Contact::setPhoneNumber(const std::string& phoneNumber){
 	PhoneNumber = phoneNumber;
 }
 
-void Contact::setFirstName(const std::string& darkestSecret){
+void Contact::setDarkestSecret(const std::string& darkestSecret){
 	DarkestSecret = darkestSecret;
 }
 

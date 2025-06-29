@@ -6,7 +6,7 @@
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 11:26:15 by bschmid           #+#    #+#             */
-/*   Updated: 2025/06/26 11:26:16 by bschmid          ###   ########.fr       */
+/*   Updated: 2025/06/29 18:54:18 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ class Contact {
 // The phonebook class manages a collection of contact objects
 class PhoneBook {
 	private:
-		static const int MAX_CONTACTS = 8l
+		static const int MAX_CONTACTS = 8;
 		Contact contacts[MAX_CONTACTS];
 		int count;
 		int oldestIndex;

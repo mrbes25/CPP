@@ -6,7 +6,7 @@
 #    By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/18 22:03:15 by bschmid           #+#    #+#              #
-#    Updated: 2025/06/26 10:48:29 by bschmid          ###   ########.fr        #
+#    Updated: 2025/06/29 18:53:28 by bschmid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME		= phonebook
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
-SRCS		= classes.hpp
+SRCS		= main.cpp Contact.cpp PhoneBook.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 RM			= rm -f
