@@ -6,7 +6,7 @@
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 11:26:15 by bschmid           #+#    #+#             */
-/*   Updated: 2025/06/29 18:54:18 by bschmid          ###   ########.fr       */
+/*   Updated: 2025/06/30 11:38:28 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ class PhoneBook {
 
 	private:
 		void displayContacts() const;
-		void displayConstact() const;
 		std::string getInput(const std::string& prompt) const;
 		bool isValidInput(const std::string& input) const;
 };

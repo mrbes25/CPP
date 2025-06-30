@@ -6,7 +6,7 @@
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 18:26:47 by bschmid           #+#    #+#             */
-/*   Updated: 2025/06/29 18:46:10 by bschmid          ###   ########.fr       */
+/*   Updated: 2025/06/30 11:36:55 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 #include <iomanip>
 #include <string>
 #include <cstdlib> // for atoi
+#include <sstream>
 
-PhoneBook::PhoneBook() : count(0), oldestIndex(0); {
+PhoneBook::PhoneBook() : count(0), oldestIndex(0) {
     // nothing else to initialize
 }
 
@@ -27,7 +28,7 @@ PhoneBook::~PhoneBook() {
 // added a new contact to the phonebook
 void PhoneBook::addContact() {
     // Create a temporary contact
-    Contact newContact:
+    Contact newContact;
     
     // Get all the required information from user
     std::string input;
@@ -68,13 +69,14 @@ void PhoneBook::searchContacts() const {
     displayContacts();
     
     // Get user's selection
-    std::string input = getInput("Enter index to diplay (0-" + std::to_string(count - 1) + "): ");
-
+    std::stringstream sstream;
+    sstream << "Enter index to display (0-" << (count - 1) << "): ";
+    std::string input = getInput(sstream.str());
     int index = std::atoi(input.c_str());
     
     // Validate index
-    if (index >= 0 && index < cout) {
-        contacts[index].diplay();
+    if (index >= 0 && index < count) {
+        contacts[index].display();
     }
     else {
         std::cout << "Invalid index!" << std::endl;
