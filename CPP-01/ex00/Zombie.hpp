@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/01 16:05:16 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/01 16:08:23 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/02 12:43:18 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/02 12:44:03 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ public:
 
 	void announce(void);
 };
+// Function prototypes
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif
 
