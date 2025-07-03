@@ -6,7 +6,7 @@
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 09:46:59 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/03 09:47:00 by bschmid          ###   ########.fr       */
+/*   Updated: 2025/07/03 10:36:10 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,26 @@ private:
 	std::string name;
 
 public:
+	// Default constructor -- REQUIRED for array allocation ***
+	Zombie();
+
 	Zombie(std::string name);
 
 	~Zombie();
+
+	void setName(std::string name);
 
 	void announce(void);
 };
 
 // Function prototypes
-Zombie* newZombie(std::string name);
-void randomChump(std::string name);
+Zombie* zombieHorde(int N, std::string name);
 
 #endif
+
+// ***
+// Why it needs a default constructor
+// when initializing an array it needs to call a default constructor (no arguments)
+// if there are only constructors with arguments the initialization of the array
+// would not know which arguments to pass and would cause a compilation error
 
