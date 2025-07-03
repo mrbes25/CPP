@@ -6,11 +6,11 @@
 #    By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/18 22:03:15 by bschmid           #+#    #+#              #
-#    Updated: 2025/07/03 12:03:36 by bschmid          ###   ########.fr        #
+#    Updated: 2025/07/03 17:56:32 by bschmid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= zombie
+NAME		= brain
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98

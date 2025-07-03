@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 11:02:23 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/03 11:02:24 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/03 17:55:40 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/03 17:55:41 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Zombie* zombieHorde(int N, std::string name) {
 		return NULL;
 	}
 
-	std::cout << "Creating horde with" << N << " zombies!" << std::endl;
+	std::cout << "Creating horde with " << N << " zombies!" << std::endl;
 
 	// Allocate array of N zombies on HEAP
 	// This calls the default constructor for each zombie (why default cons. see .hpp)

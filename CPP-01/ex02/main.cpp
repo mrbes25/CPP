@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 12:04:08 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/03 12:34:37 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/03 17:56:18 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/03 17:56:19 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int main() {
 	// create string variable
-	std::string str = "HI THIS IS BRIAN";
+	std::string str = "HI THIS IS BRAIN";
 
 	// create a pointer to the string
 	std::string* stringPTR = &str;

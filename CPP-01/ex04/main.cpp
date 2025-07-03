@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 14:50:16 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/03 14:50:18 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/03 17:57:07 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/03 17:57:08 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ int main(int ac, char **av){
 	std::string s2 = av[3];
 
 	std::cout << "Processing file: " << filename << std::endl;
-	std::cout << "Replacing '" << s1 << "' '" << s2 << "'" << std::endl;
+	std::cout << "Replacing '" << s1 << "' with '" << s2 << "'" << std::endl;
 
 	// Read fo;e
 	std::string content = readFile(filename);
