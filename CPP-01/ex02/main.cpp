@@ -6,7 +6,7 @@
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 12:04:08 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/03 12:05:57 by bschmid          ###   ########.fr       */
+/*   Updated: 2025/07/03 12:34:37 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ int main() {
 
     return 0;
 }
-
 
 // References are not pointers - they're ALIASES
 // References cannot be reassigned (they always refer to the same object)
