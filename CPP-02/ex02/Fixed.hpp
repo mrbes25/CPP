@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/07 13:46:50 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/07 13:48:50 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/07 15:01:08 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/07 15:01:09 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ public:
 	explicit Fixed(int const i);    // From integer
 	explicit Fixed(float const f);  // From floating-point
 
-		// Comparison operators
+	// Comparison operators
 	bool operator>(const Fixed& rhs) const;
 	bool operator<(const Fixed& rhs) const;
 	bool operator>=(const Fixed& rhs) const;

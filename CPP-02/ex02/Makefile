@@ -6,11 +6,11 @@
 #    By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/18 22:03:15 by bschmid           #+#    #+#              #
-#    Updated: 2025/07/07 13:34:47 by bschmid          ###   ########.fr        #
+#    Updated: 2025/07/07 14:47:44 by bschmid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= orthodox
+NAME		= fixed
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
