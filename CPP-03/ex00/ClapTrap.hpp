@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/07 21:58:30 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/07 22:48:07 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/08 09:53:20 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/08 09:55:48 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,20 @@
 
 #include <string>
 
-class ClapTrap 
+class ClapTrap
 {
     private:
         std::string Name;
-        unsigned int HitPoints = 10;
-        unsigned int EnergyPoints = 10;
-        unsigned int AttackDamage = 0;
+        unsigned int HitPoints;
+        unsigned int EnergyPoints;
+        unsigned int AttackDamage;
     public:
         // Orthodox Cononical Form
         ClapTrap();
         ClapTrap(const std::string &name);
-        ClapTrap(const ClapTrap &other);
-        ClapTrap& operator=(const ClapTrap other&);
+        ClapTrap(const ClapTrap& other);
+        ClapTrap& operator=(const ClapTrap& other);
+		~ClapTrap();
 
         // core behaviors
         void attack(const std::string& target);
