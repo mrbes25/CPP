@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 08:50:07 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/09 08:50:09 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/09 10:15:34 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/09 10:18:25 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ class Animal // this is now a abstract class because of the pure virtual functio
         virtual ~Animal();
 
         std::string getType() const;
-        virtual void makeSound() const = 0; // pure virtual function
+        virtual void makeSound() const = 0; // pure virtual function forces child classes to implement thir own function
+		// and also makes the class an abstract class
 };
 
 class Dog : public Animal

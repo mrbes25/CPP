@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/08 20:47:42 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/08 22:53:26 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/09 10:21:11 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/09 10:21:12 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ Cat::Cat(const Cat& other) : Animal(other)
 }
 Cat& Cat::operator=(const Cat& other)
 {
-    Animal::operator=(other);
     std::cout << "Cat assignment operator called" << std::endl;
     if (this != &other)
     {

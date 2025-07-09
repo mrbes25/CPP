@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 08:22:48 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/09 08:23:10 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/09 09:55:57 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/09 10:17:30 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 #include <iostream>
 #include "Brain.hpp"
 
+// Base Class
+// Polymorphism because of virtual functions
 class Animal
 {
     protected:
@@ -29,20 +31,20 @@ class Animal
         virtual ~Animal();
 
         std::string getType() const;
-        virtual void makeSound() const; // virtual function forces child classes to implement their own
+        virtual void makeSound() const; // virtual function allows child classes to implement their own
 };
 
 class Dog : public Animal
 {
     private:
-        Brain* brain;
+        Brain* brain; // Dynamic memory
     public:
         Dog();
-        Dog(const Dog&);
-        Dog& operator=(const Dog&);
+        Dog(const Dog&); // makes deep copy
+        Dog& operator=(const Dog&); // makes deep assignment operator
         ~Dog();
         void makeSound() const; // overrides
-        Brain* getBrain() const;
+        Brain* getBrain() const; // access to brain
 };
 
 class Cat : public Animal

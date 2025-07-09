@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/08 20:47:42 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/08 22:53:44 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/09 10:21:36 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/09 10:21:37 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ Dog::Dog(const Dog& other) : Animal(other)
 
 Dog& Dog::operator=(const Dog& other)
 {
-    Animal::operator=(other);
     std::cout << "Dog assignment operator called" << std::endl;
     if (this != &other)
     {

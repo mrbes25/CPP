@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschmid <bschmid@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/08 20:47:45 by bschmid           #+#    #+#             */
-/*   Updated: 2025/07/08 22:11:34 by bschmid          ###   ########.fr       */
+/*   Created: 2025/07/09 09:46:22 by bschmid           #+#    #+#             */
+/*   Updated: 2025/07/09 09:47:54 by bschmid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,11 @@ class Animal
         Animal();
         Animal(const Animal& other);
         Animal& operator=(const Animal& other);
-        virtual ~Animal();
+        virtual ~Animal(); // virtua dextructor is important for polymorphism
+		// when using the virtual destructor the compiler looks at the object and delets the most derived object first
 
         std::string getType() const;
-        virtual void makeSound() const;
+        virtual void makeSound() const; // virtual function enables polymorphism behavior
 };
 
 class Dog : public Animal
@@ -60,7 +61,7 @@ class WrongAnimal
         WrongAnimal();
         WrongAnimal(const WrongAnimal& other);
         WrongAnimal& operator=(const WrongAnimal& other);
-        virtual ~WrongAnimal();
+        virtual ~WrongAnimal(); // removing the virtual would stop the destruction of Wrongat object
 
         std::string getType() const;
         void makeSound() const; // non virtual makeSound function
